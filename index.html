@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/fondo2.jpg" type="image/x-icon">
+    <title>PPT - Ariel For AntPack</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="pantalla1" id="pantalla1">
+            <div class="creador">Ariel Caraballo Diaz</div>
+            <button class="btn-play" id="btn-play">Jugar </button>
+        </div>
+
+        <div class="pantalla2 transicion" id="pantalla2">
+        
+            <div class="jugadores">
+                <div class="jugador player1">
+                    <div class="nombre" id="user1name"> Jugador #1</div>
+                    <div class="form">
+                        <label for="inputj1">Nombre:</label>
+                        <input type="text" autocomplete="off" placeholder="Escriba el nombre del Jugador 1" maxlength="10" id="inputj1">
+                        <small id="smallp1"></small>
+                    </div>
+                </div>
+
+                <div class="jugador player2">
+                    <div class="nombre" id="user2name">Jugador #2 (PC)</div>
+                    <div class="form">
+                        <label for="inputj2">Nombre:</label>
+                        <input type="text" autocomplete="off" placeholder="Escriba el nombre del Jugador 2" maxlength="10" id="inputj2">
+                        <small id="smallp2"></small>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-play star" id="continuar">Continuar</button>
+            <button class="btn-play back" id="atras">Atras</button>
+
+        </div>
+
+        <div class="pantalla3 transicion" id="pantalla3">
+
+            <div class=" nombresp3 user1p3" id="nombreuser1"></div>
+            <div class="nombresp3 user2p3" id="nombreuser2"></div>
+            <div class="guerra">
+                <div class="opcionestitulo">
+                    <div class="opciontitulo opciontitulo1" id="opciontitulo1">¡Escoge!</div>
+                    <div class="opciontitulo opciontitulo2" id="opciontitulo2"></div>
+                </div>
+
+                <div class="user1img">
+                    <img src="" alt="" id="img1">
+                </div>
+                <div class="user2img">
+                    <img src="" alt="" id="img2">
+                </div>
+            </div>
+            <div class="botones">
+                <button class="piedra" id="piedra"><img src="img/piedra.png" alt=""></button>
+                <button class="papel" id="papel"><img src="img/papel.png" alt=""></button>
+                <button class="tijeras" id="tijeras"><img src="img/tijeras.png" alt=""></button>
+            </div>
+        </div>
+
+        <div class="resultado" id="contenedorres">
+           <div class="mensaje okey" id="popresultado">
+         
+            </div>
+              <div class="cerrar" id="cerrar"><a href="index.html">X</a></div>
+            <button class="btn" id="cerrar">volver a jugar</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

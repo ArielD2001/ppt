@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Mochiy+Pop+One&family=Poppins:ital,wght@0,300;0,400;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.container{
+    position: relative;
+    border: 5px solid rgb(0, 0, 0);
+    width: 960px;
+    overflow: hidden;
+    height: 500px;
+    border-radius: 30px;
+    background-color: black;
+    box-shadow: 15px 15px #182848;
+    animation: container .3s linear;
+}
+@keyframes container {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.creador{
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    animation: container 1s linear infinite;
+}
+a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.pantalla1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('img/fondo2.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: .7s;
+}
+
+.btn-play{
+    border: 3px solid white;
+    border-radius: 50px;
+    background-color: mediumpurple;
+    color: white;
+    font-family: 'mochiy pop one';
+    font-size: 30px;
+    padding: 5px 30px;
+    margin-top: 350px;
+    cursor: pointer;
+    position :relative;
+    transition: .2s;
+}
+.btn-play:hover{
+    background-color: blueviolet;
+    transform: scale(1.2);
+}
+
+.transicion{
+    opacity: 0;
+}
+
+.pantalla2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url('img/fondo.png');
+    transition: .7s;
+    background-size: cover;
+}
+.jugadores {
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.jugador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    height: 70%;
+    border-radius: 30px;
+    width: 35%;
+    background:white;
+    backdrop-filter: blur(2px);
+    box-shadow: 5px 5px 0 mediumslateblue, -5px -5px 0 skyblue;
+    z-index: 100 !important;
+}
+.form{
+    margin-top: 30px;
+    border:1px dashed black;
+    padding: 20px;
+    padding-bottom: 25px;
+    border-radius: 30px;
+    position: relative;
+    
+}
+.jugador label{
+    font-size: 15px;
+}
+.jugador .nombre{
+    height: 40px;
+    padding: 5px 10px;
+    overflow: hidden;
+    max-width: 300px;
+    display: flex;
+ word-wrap: break-word;
+    font-family: 'mochiy pop one';
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.jugador input{
+    width: 100%;
+    border: 2px solid mediumpurple;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    margin-top: -30px !important;
+    transition: .2s;
+}
+.jugador input:hover{
+    border-color: blueviolet;
+}
+.star{
+    position: absolute;
+    z-index: 1000;
+    font-size: 15px;
+    right: 40px;
+    bottom: 10px;
+}
+
+.back{
+    position: absolute;
+    font-size: 15px;
+    z-index: 1000;
+    left: 40px;
+    bottom: 10px;
+    background: rgb(20, 161, 216);
+}
+
+.star:hover, .back:hover{
+    transform: none;
+}
+
+
+.back:hover{
+    background: blue;
+}small{
+    position: absolute;
+    color: red;
+    font-size: 12px;
+    width: 300px;
+    bottom: 5px;
+    left: 25px;
+    transition: .2s;
+}
+
+.pantalla3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('img/fondo3.png');
+    background-size: cover;
+}
+.nombresp3{
+    width: 226px;
+    text-align: center;
+    position:absolute;
+    background: white;
+    padding: 5px;
+    border-radius: 20px;
+    top: 40px;
+    font-family: 'mochiy pop one';
+    left: 130px;
+    text-transform: uppercase;
+}
+
+.user2p3{
+    left: 580px ;
+    box-shadow: 5px 5px mediumslateblue;
+}
+.user1p3{
+    box-shadow: 5px 5px blueviolet;
+}
+.guerra{
+
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60%;
+    margin-top: 12%;
+}
+.user1img, .user2img{
+    width: 49%;
+}
+.guerra img{
+    width: 100%;
+}
+.user2img img{
+    transform: scaleX(-1);
+}
+.botones{
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+}
+.botones button{
+    width: 100px;
+    height: 100px;
+    background-color: mediumpurple;
+    cursor: pointer;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: .2s;
+    border-radius: 50%;
+    outline: none;
+}
+.botones button:hover{
+    background-color: blueviolet;
+}
+.botones button img{
+    width: 80px;
+}
+
+.resultado{
+    display: none;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, 0.6);
+    z-index: 20000;
+    backdrop-filter: blur(2px);
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+.okey{
+    width: 100%;
+    height: 100%;
+}
+.mensaje{
+    transition: .2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1em;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 mediumslateblue, -5px -5px 0 skyblue;
+    border: 1px solid grey;
+    
+}
+.cerrar{
+    display: flex;justify-content: center;align-items: center;
+   background: blueviolet;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    right: 36%;
+    top: 160px;
+    cursor: pointer;
+    transition: .2s;
+}
+.cerrar:hover{
+    background: red;
+}
+.cerrar:hover, .btn:hover{
+    transform: scale(1.1);
+}
+.btn{
+    transition: .2s;
+    position: absolute;
+    margin-top: 120px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    outline: none;
+    color: white;
+    background-color: blueviolet;
+    border:2px solid white;
+}
+.mensaje span{
+    font-family: 'mochiy pop one';
+    font-weight: bold; 
+    color: mediumpurple;
+    font-size: 20px;
+}
+.resultado .mensaje button:hover{transform: none ;}
+
+.opcionestitulo{
+    color: white;
+    padding: 0 30px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.opciontitulo{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'mochiy pop one';
+
+}
